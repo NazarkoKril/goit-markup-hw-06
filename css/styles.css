@@ -633,3 +633,38 @@ img {
 .footer-social {
   margin-left: 120px;
 }
+
+input {
+  padding: 8px;
+  font-family: inherit;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.subscribe-btn {
+  display: flex;
+  background-color: var(--brand-color);
+  width: 165px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  justify-content: center;
+  padding: 8px 24px;
+  gap: 16px;
+  position: absolute;
+  border: none;
+  border-radius: 4px;
+}
+.subscribe-icon {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
