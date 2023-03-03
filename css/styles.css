@@ -246,10 +246,6 @@ img {
   width: 8px;
   height: 8px;
 }
-/* .modal-svg:hover,
-.modal-svg:focus {
-  fill: var(--primary-white-color);
-} */
 
 .hide-h {
   position: absolute;
@@ -643,78 +639,6 @@ img {
   margin-left: 80px;
 }
 
-.input-footer {
-  padding: 8px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.6);
-  width: 264px;
-  height: 40px;
-  background-color: var(--heading-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  border-color: rgba(255, 255, 255, 0.3);
-  outline: none;
-  transition: border-color var(--transition);
-}
-
-.form-label {
-  flex-direction: column;
-  margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-}
-.subscribe-btn {
-  display: flex;
-  background-color: var(--brand-color);
-  width: 165px;
-  height: 40px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  justify-content: center;
-  padding: 8px 24px;
-  gap: 16px;
-  margin-left: 24px;
-  border: none;
-  border-radius: 4px;
-  transition: background-color var(--transition);
-}
-.subscribe-btn:focus,
-.subscribe-btn:hover {
-  background-color: var(--press-color);
-}
-.subscribe-icon {
-  width: 24px;
-  height: 24px;
-  fill: #ffffff;
-}
-.form-flex {
-  display: flex;
-  margin: 16px 0 0 0;
-}
-.input-footer:placeholder-shown {
-  border-color: rgba(255, 255, 255, 0.3);
-}
-
-.input-footer:not(:placeholder-shown) {
-  border-color: var(--brand-color);
-}
-.input-footer:hover,
-.input-footer:focus {
-  border-color: var(--brand-color);
-}
 /* modal form */
 .modal-form {
   display: flex;
@@ -780,7 +704,7 @@ img {
   position: absolute;
   top: 50%;
   left: 16px;
-
+  fill: var(--heading-color);
   transform: translate(0, -50%);
   transition: fill var(--transition);
 }
@@ -819,9 +743,9 @@ img {
 }
 
 .modal-form-check:checked + .modal-form-check-descr::before {
-  background-image: url("../images/checkbox.svg");
+  background-image: url("../images/checbox.svg");
   background-position: center;
-
+  background-repeat: no-repeat;
   background-color: var(--press-color);
   border-color: var(--press-color);
 }
@@ -889,4 +813,90 @@ img {
 .modal-form-submit:hover,
 .modal-form-submit:focus {
   background-color: var(--press-color);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.footer-form-descr {
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.footer-label-button-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-form-input {
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.02em;
+  min-width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  outline: none;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  transition: border-color var(--transition);
+}
+
+.footer-form-input:focus {
+  outline: none;
+  border-color: var(--brand-color);
+}
+
+.footer-form-input::placeholder {
+  font-size: 12px;
+  line-height: 2 !important;
+  letter-spacing: 0.04em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-input:-webkit-autofill {
+  box-shadow: inset 0 0 0 20px #2e2f42;
+  -webkit-text-fill-color: #ffffff;
+}
+
+.footer-form-submit {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  transition: background-color var(--transition);
+}
+
+.footer-form-submit:focus,
+.footer-form-submit:hover {
+  background-color: var(--press-color);
+}
+
+.footer-form-input-icon {
+  fill: currentColor;
 }

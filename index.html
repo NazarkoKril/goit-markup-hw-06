@@ -91,7 +91,7 @@
                       minlength="2"
                     />
                     <svg class="modal-form-input-icon" width="18" height="18">
-                      <use href="./images/icons.svg#icon-person"></use>
+                      <use href="./images/icons.svg#name"></use>
                     </svg>
                   </span>
                 </label>
@@ -107,7 +107,7 @@
                       title="xxx-xxx-xx-xx"
                     />
                     <svg class="modal-form-input-icon" width="18" height="24">
-                      <use href="./images/icons.svg#icon-phone"></use>
+                      <use href="./images/icons.svg#phone"></use>
                     </svg>
                   </span>
                 </label>
@@ -121,7 +121,7 @@
                       required
                     />
                     <svg class="modal-form-input-icon" width="18" height="24">
-                      <use href="./images/icons.svg#icon-email"></use>
+                      <use href="./images/icons.svg#email"></use>
                     </svg>
                   </span>
                 </label>
@@ -545,22 +545,28 @@
           </ul>
         </div>
         <div class="subsribe">
-          <form class="form-footer">
-            <label class="form-label">
-              Subscribe
-              <input
-                type="email"
-                name="username"
-                placeholder="E-mail"
-                class="input-footer"
-              />
-            </label>
-            <button type="submit" class="subscribe-btn">
-              Subscribe
-              <svg class="subscribe-icon">
-                <use href="./images/icons.svg#subscribe"></use>
-              </svg>
-            </button>
+          <form class="footer-form">
+            <p class="footer-form-descr">Subscribe</p>
+            <span class="footer-label-button-container">
+              <label class="footer-form-field">
+                <span class="footer-form-input-descr visually-hidden"
+                  >Email</span
+                >
+                <input
+                  type="email"
+                  name="user_email"
+                  class="footer-form-input"
+                  required
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="footer-form-submit btn">
+                Subscribe
+                <svg class="footer-form-input-icon" width="24" height="24">
+                  <use href="./images/icons.svg#subscribe"></use>
+                </svg>
+              </button>
+            </span>
           </form>
         </div>
       </div>
