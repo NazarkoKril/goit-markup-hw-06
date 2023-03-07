@@ -203,7 +203,7 @@ img {
   border-radius: 4px;
   transition: transform var(--transition), opacity var(--transition),
     visibility var(--transition), backgrund-color var(--transition);
-  position: relative;
+  position: absolute;
   width: 100%;
   max-width: 408px;
   height: 100%;
@@ -779,6 +779,7 @@ img {
 
 .form-check-descr-link {
   color: #4d5ae5;
+  text-decoration: underline;
 }
 
 .form-check-descr-link:focus {
@@ -799,7 +800,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
+  cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -890,6 +891,7 @@ img {
   border-radius: 4px;
   color: #ffffff;
   transition: background-color var(--transition);
+  cursor: pointer;
 }
 
 .footer-form-submit:focus,
